@@ -8,6 +8,8 @@ import (
 	"gorm.io/gorm"
 )
 
+fmt.Println("hey")
+
 func InitDB(dsn string) *gorm.DB {
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
